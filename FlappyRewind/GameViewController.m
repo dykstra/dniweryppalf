@@ -47,7 +47,7 @@
     
     [self PlaceObjects];
     
-    //Regenerates the cops on the right as they scroll off the view.
+    //Regenerates the objects on the right as they scroll off the view.
     
     ObjectsMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObjectsMoving) userInfo:nil repeats:YES];
     
@@ -58,17 +58,17 @@
     ObjectTop.center = CGPointMake(ObjectTop.center.x -1, ObjectTop.center.y);
     ObjectBottom.center = CGPointMake(ObjectBottom.center.x -1, ObjectBottom.center.y);
     
-    //Resets the cop images to start over on the right of the screen.
+    //Resets the object images to start over on the right of the screen.
     if (ObjectTop.center.x < -52) {
         [self PlaceObjects];
     }
     
-    //Increments the score by 1 as successfully flown through cops.
+    //Increments the score by 1 as successfully flown through objects.
     if (ObjectTop.center.x == 8){
         [self Score];
     }
     
-    //Collusion with bieber and the cops / obstacles.
+    //Collusion with birdy and objects.
     if (CGRectIntersectsRect(Birdy.frame, ObjectTop.frame)){
         [self GameOver];
     }
@@ -87,7 +87,7 @@
     
 }
 
-//Randomly generates the cops in different positions; ensuring proper spacing from top, bottom and middle.
+//Randomly generates the objects in different positions; ensuring proper spacing from top, bottom and middle.
 -(void)PlaceObjects{
     
     RandomTopObjectPosition = arc4random() %350;
@@ -100,7 +100,7 @@
     
 }
 
-//Sets the position and speed as bieber is tapped.
+//Sets the position and speed as birdy is tapped.
 -(void)BirdyMoving {
     
     Birdy.center = CGPointMake(Birdy.center.x, Birdy.center.y - BirdyFlight);
