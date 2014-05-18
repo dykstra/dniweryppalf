@@ -26,8 +26,9 @@
 		D96E69D61927E2F9001CFEBC /* birdyup.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D11927E2F9001CFEBC /* birdyup.png */; };
 		D96E69D71927E2F9001CFEBC /* gameback.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D21927E2F9001CFEBC /* gameback.png */; };
 		D96E69D81927E2F9001CFEBC /* mainback.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D31927E2F9001CFEBC /* mainback.png */; };
-		D96E69D91927E2F9001CFEBC /* objects.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D41927E2F9001CFEBC /* objects.png */; };
-		D96E69DB1927E97F001CFEBC /* barobjects.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69DA1927E97F001CFEBC /* barobjects.png */; };
+		D96E69DE19286032001CFEBC /* objectbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69DC19286032001CFEBC /* objectbottom.png */; };
+		D96E69DF19286032001CFEBC /* objecttop.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69DD19286032001CFEBC /* objecttop.png */; };
+		D96E69E1192868B0001CFEBC /* barobjects.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E0192868B0001CFEBC /* barobjects.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +67,9 @@
 		D96E69D11927E2F9001CFEBC /* birdyup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdyup.png; sourceTree = "<group>"; };
 		D96E69D21927E2F9001CFEBC /* gameback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameback.png; sourceTree = "<group>"; };
 		D96E69D31927E2F9001CFEBC /* mainback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainback.png; sourceTree = "<group>"; };
-		D96E69D41927E2F9001CFEBC /* objects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objects.png; sourceTree = "<group>"; };
-		D96E69DA1927E97F001CFEBC /* barobjects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barobjects.png; sourceTree = "<group>"; };
+		D96E69DC19286032001CFEBC /* objectbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectbottom.png; sourceTree = "<group>"; };
+		D96E69DD19286032001CFEBC /* objecttop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objecttop.png; sourceTree = "<group>"; };
+		D96E69E0192868B0001CFEBC /* barobjects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barobjects.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,12 +145,13 @@
 		D96E699F1927DD98001CFEBC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D96E69DA1927E97F001CFEBC /* barobjects.png */,
+				D96E69E0192868B0001CFEBC /* barobjects.png */,
+				D96E69DC19286032001CFEBC /* objectbottom.png */,
+				D96E69DD19286032001CFEBC /* objecttop.png */,
 				D96E69D01927E2F9001CFEBC /* birdydown.png */,
 				D96E69D11927E2F9001CFEBC /* birdyup.png */,
 				D96E69D21927E2F9001CFEBC /* gameback.png */,
 				D96E69D31927E2F9001CFEBC /* mainback.png */,
-				D96E69D41927E2F9001CFEBC /* objects.png */,
 				D96E69A01927DD98001CFEBC /* FlappyRewind-Info.plist */,
 				D96E69A11927DD98001CFEBC /* InfoPlist.strings */,
 				D96E69A41927DD98001CFEBC /* main.m */,
@@ -251,14 +254,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96E69D91927E2F9001CFEBC /* objects.png in Resources */,
 				D96E69D71927E2F9001CFEBC /* gameback.png in Resources */,
 				D96E69D81927E2F9001CFEBC /* mainback.png in Resources */,
-				D96E69DB1927E97F001CFEBC /* barobjects.png in Resources */,
 				D96E69D61927E2F9001CFEBC /* birdyup.png in Resources */,
 				D96E69B11927DD98001CFEBC /* Images.xcassets in Resources */,
+				D96E69E1192868B0001CFEBC /* barobjects.png in Resources */,
 				D96E69A31927DD98001CFEBC /* InfoPlist.strings in Resources */,
+				D96E69DE19286032001CFEBC /* objectbottom.png in Resources */,
 				D96E69D51927E2F9001CFEBC /* birdydown.png in Resources */,
+				D96E69DF19286032001CFEBC /* objecttop.png in Resources */,
 				D96E69AC1927DD98001CFEBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				D96E69C91927DD98001CFEBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D96E69CA1927DD98001CFEBC /* Build configuration list for PBXNativeTarget "FlappyRewindTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				D96E69CC1927DD98001CFEBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

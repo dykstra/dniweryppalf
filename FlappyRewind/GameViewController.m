@@ -92,8 +92,9 @@
     
     RandomTopObjectPosition = arc4random() %350;
     RandomTopObjectPosition = RandomTopObjectPosition - 228;
-    //Adjust for difficulty - 655 is hard. Increase to make it easier.
-    RandomBottomObjectPosition = RandomTopObjectPosition + 663;
+    
+//Adjust for difficulty - 655 is hard. Increase to make it easier.
+    RandomBottomObjectPosition = RandomTopObjectPosition + 660;
     
     ObjectTop.center = CGPointMake(340, RandomTopObjectPosition);
     ObjectBottom.center = CGPointMake(340, RandomBottomObjectPosition);
@@ -111,11 +112,11 @@
     }
     
     if (BirdyFlight > 0) {
-        Birdy.image = [UIImage imageNamed:@"birdydown.png"];
+        Birdy.image = [UIImage imageNamed:@"birdyup.png"];
     }
     
     if (BirdyFlight < 0) {
-        Birdy.image = [UIImage imageNamed:@"birdyup.png"];
+        Birdy.image = [UIImage imageNamed:@"birdydown.png"];
     }
     
 }
