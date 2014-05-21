@@ -24,6 +24,7 @@ NSInteger HighScoreNumber;
     IBOutlet UIImageView *BarTop;
     IBOutlet UIImageView *BarBottom;
     IBOutlet UIButton *Exit;
+    IBOutlet UIButton *Back;
     IBOutlet UILabel *ScoreLabel;
     
     NSTimer *BirdyMove;

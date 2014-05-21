@@ -22,8 +22,6 @@
 		D96E69C21927DD98001CFEBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D96E69C01927DD98001CFEBC /* InfoPlist.strings */; };
 		D96E69C41927DD98001CFEBC /* FlappyRewindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69C31927DD98001CFEBC /* FlappyRewindTests.m */; };
 		D96E69CF1927DE03001CFEBC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69CE1927DE03001CFEBC /* GameViewController.m */; };
-		D96E69D51927E2F9001CFEBC /* birdydown.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D01927E2F9001CFEBC /* birdydown.png */; };
-		D96E69D61927E2F9001CFEBC /* birdyup.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D11927E2F9001CFEBC /* birdyup.png */; };
 		D96E69D81927E2F9001CFEBC /* mainback.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D31927E2F9001CFEBC /* mainback.png */; };
 		D96E69DE19286032001CFEBC /* objectbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69DC19286032001CFEBC /* objectbottom.png */; };
 		D96E69DF19286032001CFEBC /* objecttop.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69DD19286032001CFEBC /* objecttop.png */; };
@@ -34,6 +32,11 @@
 		D96E69EC19299264001CFEBC /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E819299264001CFEBC /* startbutton.png */; };
 		D96E69ED19299264001CFEBC /* tryagainbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E919299264001CFEBC /* tryagainbutton.png */; };
 		D96E69EF192993B5001CFEBC /* highscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69EE192993B5001CFEBC /* highscore.png */; };
+		D96E69F2192C5537001CFEBC /* forwardbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F0192C5537001CFEBC /* forwardbutton.png */; };
+		D96E69F3192C5537001CFEBC /* gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F1192C5537001CFEBC /* gameover.png */; };
+		D96E69F6192C5626001CFEBC /* flappyLgDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F4192C5626001CFEBC /* flappyLgDown.png */; };
+		D96E69F7192C5626001CFEBC /* flappyLgUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F5192C5626001CFEBC /* flappyLgUp.png */; };
+		D96E69F9192C58CF001CFEBC /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F8192C58CF001CFEBC /* backbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +71,6 @@
 		D96E69C31927DD98001CFEBC /* FlappyRewindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlappyRewindTests.m; sourceTree = "<group>"; };
 		D96E69CD1927DE03001CFEBC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		D96E69CE1927DE03001CFEBC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		D96E69D01927E2F9001CFEBC /* birdydown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdydown.png; sourceTree = "<group>"; };
-		D96E69D11927E2F9001CFEBC /* birdyup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdyup.png; sourceTree = "<group>"; };
 		D96E69D31927E2F9001CFEBC /* mainback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainback.png; sourceTree = "<group>"; };
 		D96E69DC19286032001CFEBC /* objectbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectbottom.png; sourceTree = "<group>"; };
 		D96E69DD19286032001CFEBC /* objecttop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objecttop.png; sourceTree = "<group>"; };
@@ -80,6 +81,11 @@
 		D96E69E819299264001CFEBC /* startbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbutton.png; sourceTree = "<group>"; };
 		D96E69E919299264001CFEBC /* tryagainbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tryagainbutton.png; sourceTree = "<group>"; };
 		D96E69EE192993B5001CFEBC /* highscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highscore.png; sourceTree = "<group>"; };
+		D96E69F0192C5537001CFEBC /* forwardbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardbutton.png; sourceTree = "<group>"; };
+		D96E69F1192C5537001CFEBC /* gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameover.png; sourceTree = "<group>"; };
+		D96E69F4192C5626001CFEBC /* flappyLgDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLgDown.png; sourceTree = "<group>"; };
+		D96E69F5192C5626001CFEBC /* flappyLgUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLgUp.png; sourceTree = "<group>"; };
+		D96E69F8192C58CF001CFEBC /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,11 @@
 		D96E699F1927DD98001CFEBC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D96E69F8192C58CF001CFEBC /* backbutton.png */,
+				D96E69F5192C5626001CFEBC /* flappyLgUp.png */,
+				D96E69F4192C5626001CFEBC /* flappyLgDown.png */,
+				D96E69F1192C5537001CFEBC /* gameover.png */,
+				D96E69F0192C5537001CFEBC /* forwardbutton.png */,
 				D96E69EE192993B5001CFEBC /* highscore.png */,
 				D96E69E619299264001CFEBC /* normalbutton.png */,
 				D96E69E719299264001CFEBC /* rewindbutton.png */,
@@ -164,8 +175,6 @@
 				D96E69E0192868B0001CFEBC /* barobjects.png */,
 				D96E69DC19286032001CFEBC /* objectbottom.png */,
 				D96E69DD19286032001CFEBC /* objecttop.png */,
-				D96E69D01927E2F9001CFEBC /* birdydown.png */,
-				D96E69D11927E2F9001CFEBC /* birdyup.png */,
 				D96E69D31927E2F9001CFEBC /* mainback.png */,
 				D96E69A01927DD98001CFEBC /* FlappyRewind-Info.plist */,
 				D96E69A11927DD98001CFEBC /* InfoPlist.strings */,
@@ -272,15 +281,18 @@
 				D96E69EB19299264001CFEBC /* rewindbutton.png in Resources */,
 				D96E69E519299149001CFEBC /* gameback.png in Resources */,
 				D96E69D81927E2F9001CFEBC /* mainback.png in Resources */,
-				D96E69D61927E2F9001CFEBC /* birdyup.png in Resources */,
+				D96E69F7192C5626001CFEBC /* flappyLgUp.png in Resources */,
 				D96E69B11927DD98001CFEBC /* Images.xcassets in Resources */,
+				D96E69F2192C5537001CFEBC /* forwardbutton.png in Resources */,
+				D96E69F9192C58CF001CFEBC /* backbutton.png in Resources */,
+				D96E69F6192C5626001CFEBC /* flappyLgDown.png in Resources */,
 				D96E69EA19299264001CFEBC /* normalbutton.png in Resources */,
 				D96E69EC19299264001CFEBC /* startbutton.png in Resources */,
 				D96E69E1192868B0001CFEBC /* barobjects.png in Resources */,
 				D96E69A31927DD98001CFEBC /* InfoPlist.strings in Resources */,
 				D96E69DE19286032001CFEBC /* objectbottom.png in Resources */,
 				D96E69ED19299264001CFEBC /* tryagainbutton.png in Resources */,
-				D96E69D51927E2F9001CFEBC /* birdydown.png in Resources */,
+				D96E69F3192C5537001CFEBC /* gameover.png in Resources */,
 				D96E69EF192993B5001CFEBC /* highscore.png in Resources */,
 				D96E69DF19286032001CFEBC /* objecttop.png in Resources */,
 				D96E69AC1927DD98001CFEBC /* Main.storyboard in Resources */,

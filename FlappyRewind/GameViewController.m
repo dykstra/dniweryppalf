@@ -24,6 +24,7 @@
     [BirdyMove invalidate];
     
     Exit.hidden = NO;
+    Back.hidden = NO;
     ObjectTop.hidden = YES;
     ObjectBottom.hidden = YES;
     Birdy.hidden = YES;
@@ -42,6 +43,7 @@
     ObjectTop.hidden = NO;
     ObjectBottom.hidden = NO;
     StartGame.hidden = YES;
+    Back.hidden = YES;
     
     BirdyMove = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(BirdyMoving) userInfo:nil repeats:YES];
     
@@ -112,11 +114,11 @@
     }
     
     if (BirdyFlight > 0) {
-        Birdy.image = [UIImage imageNamed:@"birdyup.png"];
+        Birdy.image = [UIImage imageNamed:@"flappyLgUp.png"];
     }
     
     if (BirdyFlight < 0) {
-        Birdy.image = [UIImage imageNamed:@"birdydown.png"];
+        Birdy.image = [UIImage imageNamed:@"flappyLgDown.png"];
     }
     
 }
