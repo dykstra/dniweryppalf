@@ -18,12 +18,13 @@ NSInteger HighScoreNumber;
 {
     
     IBOutlet UIImageView *Birdy;
+    IBOutlet UIImageView *GameOver;
     IBOutlet UIButton *StartGame;
     IBOutlet UIImageView *ObjectTop;
     IBOutlet UIImageView *ObjectBottom;
     IBOutlet UIImageView *BarTop;
     IBOutlet UIImageView *BarBottom;
-    IBOutlet UIButton *Exit;
+    IBOutlet UIButton *TryAgain;
     IBOutlet UIButton *Back;
     IBOutlet UILabel *ScoreLabel;
     

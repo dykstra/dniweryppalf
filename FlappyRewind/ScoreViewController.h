@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 NSInteger HighScoreNumber;
+NSInteger LowScoreNumber;
 
-@interface HighScoreViewController : UIViewController
+@interface ScoreViewController : UIViewController
 
 {
     IBOutlet UILabel *HighScore;
+    IBOutlet UILabel *LowScore;
 }
 
 @end

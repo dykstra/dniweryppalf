@@ -1,22 +1,25 @@
 //
-//  HighScoreViewController.m
+//  ScoreViewController.m
 //  FlappyRewind
 //
 //  Created by Doug Dykstra on 5/17/14.
 //  Copyright (c) 2014 dougdykstra. All rights reserved.
 //
 
-#import "HighScoreViewController.h"
+#import "ScoreViewController.h"
 
-@interface HighScoreViewController ()
+@interface ScoreViewController ()
 
 @end
 
-@implementation HighScoreViewController
+@implementation ScoreViewController
 
 - (void)viewDidLoad
 {
     HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    HighScore.text = [NSString stringWithFormat:@" %li", (long)HighScoreNumber];
+    
+    LowScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     HighScore.text = [NSString stringWithFormat:@" %li", (long)HighScoreNumber];
     
     [super viewDidLoad];

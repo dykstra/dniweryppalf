@@ -14,7 +14,7 @@
 		D96E69A51927DD98001CFEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69A41927DD98001CFEBC /* main.m */; };
 		D96E69A91927DD98001CFEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69A81927DD98001CFEBC /* AppDelegate.m */; };
 		D96E69AC1927DD98001CFEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96E69AA1927DD98001CFEBC /* Main.storyboard */; };
-		D96E69AF1927DD98001CFEBC /* HighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69AE1927DD98001CFEBC /* HighScoreViewController.m */; };
+		D96E69AF1927DD98001CFEBC /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69AE1927DD98001CFEBC /* ScoreViewController.m */; };
 		D96E69B11927DD98001CFEBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96E69B01927DD98001CFEBC /* Images.xcassets */; };
 		D96E69B81927DD98001CFEBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E69B71927DD98001CFEBC /* XCTest.framework */; };
 		D96E69B91927DD98001CFEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E69981927DD98001CFEBC /* Foundation.framework */; };
@@ -37,6 +37,7 @@
 		D96E69F6192C5626001CFEBC /* flappyLgDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F4192C5626001CFEBC /* flappyLgDown.png */; };
 		D96E69F7192C5626001CFEBC /* flappyLgUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F5192C5626001CFEBC /* flappyLgUp.png */; };
 		D96E69F9192C58CF001CFEBC /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F8192C58CF001CFEBC /* backbutton.png */; };
+		D96E69FC192D7519001CFEBC /* RewindGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69FB192D7519001CFEBC /* RewindGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,8 @@
 		D96E69A71927DD98001CFEBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D96E69A81927DD98001CFEBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D96E69AB1927DD98001CFEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D96E69AD1927DD98001CFEBC /* HighScoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighScoreViewController.h; sourceTree = "<group>"; };
-		D96E69AE1927DD98001CFEBC /* HighScoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighScoreViewController.m; sourceTree = "<group>"; };
+		D96E69AD1927DD98001CFEBC /* ScoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		D96E69AE1927DD98001CFEBC /* ScoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
 		D96E69B01927DD98001CFEBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D96E69B61927DD98001CFEBC /* FlappyRewindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyRewindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96E69B71927DD98001CFEBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -86,6 +87,8 @@
 		D96E69F4192C5626001CFEBC /* flappyLgDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLgDown.png; sourceTree = "<group>"; };
 		D96E69F5192C5626001CFEBC /* flappyLgUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLgUp.png; sourceTree = "<group>"; };
 		D96E69F8192C58CF001CFEBC /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
+		D96E69FA192D7519001CFEBC /* RewindGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewindGameViewController.h; sourceTree = "<group>"; };
+		D96E69FB192D7519001CFEBC /* RewindGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewindGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +151,10 @@
 				D96E69A71927DD98001CFEBC /* AppDelegate.h */,
 				D96E69A81927DD98001CFEBC /* AppDelegate.m */,
 				D96E69AA1927DD98001CFEBC /* Main.storyboard */,
-				D96E69AD1927DD98001CFEBC /* HighScoreViewController.h */,
-				D96E69AE1927DD98001CFEBC /* HighScoreViewController.m */,
+				D96E69AD1927DD98001CFEBC /* ScoreViewController.h */,
+				D96E69AE1927DD98001CFEBC /* ScoreViewController.m */,
+				D96E69FA192D7519001CFEBC /* RewindGameViewController.h */,
+				D96E69FB192D7519001CFEBC /* RewindGameViewController.m */,
 				D96E69CD1927DE03001CFEBC /* GameViewController.h */,
 				D96E69CE1927DE03001CFEBC /* GameViewController.m */,
 				D96E69B01927DD98001CFEBC /* Images.xcassets */,
@@ -315,8 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96E69CF1927DE03001CFEBC /* GameViewController.m in Sources */,
-				D96E69AF1927DD98001CFEBC /* HighScoreViewController.m in Sources */,
+				D96E69AF1927DD98001CFEBC /* ScoreViewController.m in Sources */,
 				D96E69A91927DD98001CFEBC /* AppDelegate.m in Sources */,
+				D96E69FC192D7519001CFEBC /* RewindGameViewController.m in Sources */,
 				D96E69A51927DD98001CFEBC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
