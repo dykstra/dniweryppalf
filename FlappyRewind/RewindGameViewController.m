@@ -29,20 +29,15 @@
     ObjectTopR.hidden = YES;
     ObjectBottomR.hidden = YES;
     BirdyR.hidden = YES;
-    UISwitchControlInversion.hidden = YES;
-    SwitchControlLabel.hidden = YES;
     RewindGameBack.hidden = NO;
     ScoreLabelR.hidden = NO;
+    SettingsButton.hidden = NO;
 }
 
 -(void)ScoreR {
     
     ScoreNumberR = ScoreNumberR - 1;
     ScoreLabelR.text = [NSString stringWithFormat:@"%i", ScoreNumberR];
-}
-
--(IBAction)SwitchControls:(id)sender {
-    
 }
 
 -(IBAction)StartGameR:(id)sender {
@@ -52,11 +47,10 @@
     StartGameR.hidden = YES;
     BackR.hidden = YES;
     GameOverR.hidden = YES;
-    UISwitchControlInversion.hidden = YES;
-    SwitchControlLabel.hidden = YES;
     TryAgainR.hidden = YES;
     RewindGameBack.hidden = NO;
     ScoreLabelR.hidden = NO;
+    SettingsButton.hidden = YES;
     
     BirdyMoveR = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(BirdyMovingR) userInfo:nil repeats:YES];
         [self PlaceObjectsR];
@@ -117,11 +111,16 @@
     ObjectBottomR.center = CGPointMake(0, RandomBottomObjectPositionR);
 }
 
-//Sets the position and speed as birdy is tapped.
-
 -(void)BirdyMovingR {
+
+//Set user's uiswitch gravity selection from previous settings screen
     
-    if (UISwitchControlInversion.on) {
+    NSUserDefaults *GravitySwitchValue = [NSUserDefaults standardUserDefaults];
+    BOOL SwitchOn = [GravitySwitchValue boolForKey:@"SwitchOn"];
+
+//UISwitch to invert gravity. Also sets the position and speed as birdy is tapped.
+    
+    if (SwitchOn) {
         
         BirdyR.center = CGPointMake(BirdyR.center.x, BirdyR.center.y + BirdyFlightR);
         BirdyFlightR = BirdyFlightR - 5;
@@ -133,7 +132,6 @@
         
         BirdyR.center = CGPointMake(BirdyR.center.x, BirdyR.center.y - BirdyFlightR);
         BirdyFlightR = BirdyFlightR - 5;
-        
         if (BirdyFlightR < -15) {
             BirdyFlightR = -15;
         }
@@ -142,7 +140,6 @@
     if (BirdyFlightR > 0) {
         BirdyR.image = [UIImage imageNamed:@"flappyLgDown.png"];
         }
-    
     if (BirdyFlightR < 0) {
         BirdyR.image = [UIImage imageNamed:@"flappyLgUp.png"];
     }
@@ -171,11 +168,18 @@
     GameOverR.hidden = YES;
     RewindGameBack.hidden = YES;
     ScoreLabelR.hidden = YES;
+    SettingsButton.hidden = NO;
     
     ScoreNumberR = 0;
     LowScoreNumberR = [[NSUserDefaults standardUserDefaults] integerForKey:@"LowScoreSaved"];
     
     [super viewDidLoad];
+    
+    //NSUserDefaults *GravitySwitchValue = [NSUserDefaults standardUserDefaults];
+    //BOOL SwitchOn = [GravitySwitchValue boolForKey:@"SwitchOn"];
+    
+    //_UISwitchInvertGravity.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"switchOn"];
+    
     // Do any additional setup after loading the view.
 }
 

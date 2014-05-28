@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "RewindSettingsViewController.h"
 
 int BirdyFlightR;
 int RandomTopObjectPositionR;
@@ -28,15 +29,13 @@ NSInteger LowScoreNumberR;
     IBOutlet UIButton *TryAgainR;
     IBOutlet UIButton *BackR;
     IBOutlet UILabel *ScoreLabelR;
-    IBOutlet UISwitch *UISwitchControlInversion;
-    IBOutlet UILabel *SwitchControlLabel;
+    IBOutlet UIButton *SettingsButton;
     
     NSTimer *BirdyMoveR;
     NSTimer *ObjectsMovementR;
 }
 
 -(IBAction)StartGameR:(id)sender;
--(IBAction)SwitchControls:(id)sender;
 -(void)BirdyMovingR;
 -(void)ObjectsMovingR;
 -(void)PlaceObjectsR;

@@ -38,6 +38,8 @@
 		D96E69F7192C5626001CFEBC /* flappyLgUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F5192C5626001CFEBC /* flappyLgUp.png */; };
 		D96E69F9192C58CF001CFEBC /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F8192C58CF001CFEBC /* backbutton.png */; };
 		D96E69FC192D7519001CFEBC /* RewindGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69FB192D7519001CFEBC /* RewindGameViewController.m */; };
+		D9CAE9A2193234DF00FD3E78 /* RewindSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */; };
+		D9CAE9A51932352100FD3E78 /* GameSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CAE9A41932352100FD3E78 /* GameSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,10 @@
 		D96E69F8192C58CF001CFEBC /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 		D96E69FA192D7519001CFEBC /* RewindGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewindGameViewController.h; sourceTree = "<group>"; };
 		D96E69FB192D7519001CFEBC /* RewindGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewindGameViewController.m; sourceTree = "<group>"; };
+		D9CAE9A0193234DF00FD3E78 /* RewindSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewindSettingsViewController.h; sourceTree = "<group>"; };
+		D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewindSettingsViewController.m; sourceTree = "<group>"; };
+		D9CAE9A31932352100FD3E78 /* GameSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettingsViewController.h; sourceTree = "<group>"; };
+		D9CAE9A41932352100FD3E78 /* GameSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +161,12 @@
 				D96E69AE1927DD98001CFEBC /* ScoreViewController.m */,
 				D96E69FA192D7519001CFEBC /* RewindGameViewController.h */,
 				D96E69FB192D7519001CFEBC /* RewindGameViewController.m */,
+				D9CAE9A0193234DF00FD3E78 /* RewindSettingsViewController.h */,
+				D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */,
 				D96E69CD1927DE03001CFEBC /* GameViewController.h */,
 				D96E69CE1927DE03001CFEBC /* GameViewController.m */,
+				D9CAE9A31932352100FD3E78 /* GameSettingsViewController.h */,
+				D9CAE9A41932352100FD3E78 /* GameSettingsViewController.m */,
 				D96E69B01927DD98001CFEBC /* Images.xcassets */,
 				D96E699F1927DD98001CFEBC /* Supporting Files */,
 			);
@@ -320,7 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96E69CF1927DE03001CFEBC /* GameViewController.m in Sources */,
+				D9CAE9A51932352100FD3E78 /* GameSettingsViewController.m in Sources */,
 				D96E69AF1927DD98001CFEBC /* ScoreViewController.m in Sources */,
+				D9CAE9A2193234DF00FD3E78 /* RewindSettingsViewController.m in Sources */,
 				D96E69A91927DD98001CFEBC /* AppDelegate.m in Sources */,
 				D96E69FC192D7519001CFEBC /* RewindGameViewController.m in Sources */,
 				D96E69A51927DD98001CFEBC /* main.m in Sources */,
