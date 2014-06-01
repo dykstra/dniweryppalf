@@ -9,37 +9,37 @@
 #import <UIKit/UIKit.h>
 #include "RewindSettingsViewController.h"
 
-int BirdyFlightR;
-int RandomTopObjectPositionR;
-int RandomBottomObjectPositionR;
-int ScoreNumberR;
-NSInteger LowScoreNumberR;
+int birdyFlightRewind;
+int randomTopObjectRewind;
+int randomBottomObjectRewind;
+int scoreNumberRewind;
+NSInteger lowScoreNumber;
 
 @interface RewindGameViewController : UIViewController
 
 {
-    IBOutlet UIImageView *BirdyR;
-    IBOutlet UIImageView *GameOverR;
-    IBOutlet UIImageView *RewindGameBack;
-    IBOutlet UIButton *StartGameR;
-    IBOutlet UIImageView *ObjectTopR;
-    IBOutlet UIImageView *ObjectBottomR;
+    IBOutlet UIImageView *birdyRewind;
+    IBOutlet UIImageView *gameOverRewind;
+    IBOutlet UIImageView *rewindGameBack;
+    IBOutlet UIButton *startGameRewind;
+    IBOutlet UIImageView *objectTopRewind;
+    IBOutlet UIImageView *objectBottomRewind;
     IBOutlet UIImageView *BarTopR;
-    IBOutlet UIImageView *BarBottomR;
-    IBOutlet UIButton *TryAgainR;
-    IBOutlet UIButton *BackR;
-    IBOutlet UILabel *ScoreLabelR;
-    IBOutlet UIButton *SettingsButton;
+    IBOutlet UIImageView *barBottom;
+    IBOutlet UIButton *tryAgainRewind;
+    IBOutlet UIButton *backRewind;
+    IBOutlet UILabel *scoreLabelRewind;
+    IBOutlet UIButton *settingsButon;
     
-    NSTimer *BirdyMoveR;
-    NSTimer *ObjectsMovementR;
+    NSTimer *birdyMoveRewind;
+    NSTimer *objectsMovementRewind;
 }
 
--(IBAction)StartGameR:(id)sender;
--(void)BirdyMovingR;
--(void)ObjectsMovingR;
--(void)PlaceObjectsR;
--(void)ScoreR;
--(void)GameOverR;
+-(IBAction)startGameRewindButton:(id)sender;
+-(void)birdyMovingRewind;
+-(void)objectMovingRewind;
+-(void)placeObjectsRewind;
+-(void)scoreRewind;
+-(void)gameOverRewind;
 
 @end

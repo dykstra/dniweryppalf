@@ -10,10 +10,15 @@
 
 @interface RewindSettingsViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UISlider *DifficultySlider;
+
 @property (nonatomic, strong) IBOutlet UISwitch *UISwitchInvertGravity;
+@property (nonatomic, strong) IBOutlet UIButton *easyModeButton;
+@property (nonatomic, strong) IBOutlet UIButton *mediumModeButton;
+@property (nonatomic, strong) IBOutlet UIButton *hardModeButton;
 
 -(IBAction)SwitchGravity;
--(IBAction)AdjustDifficulty;
+-(IBAction)easyMode;
+-(IBAction)mediumMode;
+-(IBAction)hardMode;
 
 @end

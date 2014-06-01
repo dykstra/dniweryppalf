@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 dougdykstra. All rights reserved.
 //
 
+#import "GameManager.h"
 #import "RewindSettingsViewController.h"
 
 @interface RewindSettingsViewController ()
@@ -36,6 +37,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+//Sets the default user selected invert gravity selection on load.
     
     _UISwitchInvertGravity.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"SwitchOn"];
     
@@ -46,6 +49,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)easyMode {
+    [GameManager setDifficulty:0];
+}
+
+-(IBAction)mediumMode {
+    [GameManager setDifficulty:1];
+}
+
+-(IBAction)hardMode {
+    [GameManager setDifficulty:2];
 }
 
 /*

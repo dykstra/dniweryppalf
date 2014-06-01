@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D94B78191938022900029423 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B78181938022900029423 /* GameManager.m */; };
 		D96E69991927DD98001CFEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E69981927DD98001CFEBC /* Foundation.framework */; };
 		D96E699B1927DD98001CFEBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E699A1927DD98001CFEBC /* CoreGraphics.framework */; };
 		D96E699D1927DD98001CFEBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E699C1927DD98001CFEBC /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D94B78171938022900029423 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameManager.h; path = ../GameManager.h; sourceTree = "<group>"; };
+		D94B78181938022900029423 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameManager.m; path = ../GameManager.m; sourceTree = "<group>"; };
 		D96E69951927DD98001CFEBC /* FlappyRewind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyRewind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96E69981927DD98001CFEBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D96E699A1927DD98001CFEBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +166,8 @@
 				D96E69FB192D7519001CFEBC /* RewindGameViewController.m */,
 				D9CAE9A0193234DF00FD3E78 /* RewindSettingsViewController.h */,
 				D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */,
+				D94B78171938022900029423 /* GameManager.h */,
+				D94B78181938022900029423 /* GameManager.m */,
 				D96E69CD1927DE03001CFEBC /* GameViewController.h */,
 				D96E69CE1927DE03001CFEBC /* GameViewController.m */,
 				D9CAE9A31932352100FD3E78 /* GameSettingsViewController.h */,
@@ -334,6 +339,7 @@
 				D96E69AF1927DD98001CFEBC /* ScoreViewController.m in Sources */,
 				D9CAE9A2193234DF00FD3E78 /* RewindSettingsViewController.m in Sources */,
 				D96E69A91927DD98001CFEBC /* AppDelegate.m in Sources */,
+				D94B78191938022900029423 /* GameManager.m in Sources */,
 				D96E69FC192D7519001CFEBC /* RewindGameViewController.m in Sources */,
 				D96E69A51927DD98001CFEBC /* main.m in Sources */,
 			);

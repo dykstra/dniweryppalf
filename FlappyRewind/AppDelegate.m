@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RewindSettingsViewController.h"
 
 @implementation AppDelegate
 
