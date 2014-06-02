@@ -51,6 +51,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Easy(0), Medium(1), and Hard(2) buttons
+
 -(IBAction)easyMode {
     [GameManager setDifficulty:0];
 }

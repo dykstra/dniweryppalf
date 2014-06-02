@@ -36,6 +36,7 @@ NSInteger lowScoreNumber;
 }
 
 -(IBAction)startGameRewindButton:(id)sender;
+-(IBAction)tryAgainRewindButton:(id)sender;
 -(void)birdyMovingRewind;
 -(void)objectMovingRewind;
 -(void)placeObjectsRewind;

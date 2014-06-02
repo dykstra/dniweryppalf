@@ -16,8 +16,6 @@
 
 @implementation RewindGameViewController
 
-//static int _difficulty;
-//static int _getDifficulty;
 
 -(IBAction)startGameRewindButton:(id)sender {
     
@@ -57,6 +55,16 @@
     rewindGameBack.hidden = NO;
     scoreLabelRewind.hidden = NO;
     settingsButon.hidden = NO;
+}
+
+
+-(IBAction)tryAgainRewindButton:(id)sender {
+    
+//Reloads the initial rewind game view after gameover. 
+    
+    RewindGameViewController *rewindGameViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RewindGameViewController"];
+    [self presentViewController:rewindGameViewController animated:YES completion:nil];
+    
 }
 
 -(void)scoreRewind {
@@ -107,46 +115,32 @@
     
     randomTopObjectRewind = arc4random() %350;  //original 350
     randomTopObjectRewind = randomTopObjectRewind - 228; //original 228
-    
-//Adjust for difficulty - 655 is hard. Increase to make it easier.
+
+//Get's _difficulty value from NSObject GameManager
     
     [GameManager getDifficulty];
     
     if ([GameManager getDifficulty] == 0) {
+        
+//Adjust for difficulty - 655 is hard. Increase to make it easier.
     
-    randomBottomObjectRewind = randomTopObjectRewind + 700;
+    randomBottomObjectRewind = randomTopObjectRewind + 690;
         objectTopRewind.center = CGPointMake(0, randomTopObjectRewind);
         objectBottomRewind.center = CGPointMake(0, randomBottomObjectRewind);
     
     } else if ([GameManager getDifficulty] == 1) {
         
-    randomBottomObjectRewind = randomTopObjectRewind + 665;
+    randomBottomObjectRewind = randomTopObjectRewind + 675;
         objectTopRewind.center = CGPointMake(0, randomTopObjectRewind);
         objectBottomRewind.center = CGPointMake(0, randomBottomObjectRewind);
     
     } else if ([GameManager getDifficulty] == 2) {
         
-        randomBottomObjectRewind = randomTopObjectRewind + 635;
+        randomBottomObjectRewind = randomTopObjectRewind + 655;
             objectTopRewind.center = CGPointMake(0, randomTopObjectRewind);
             objectBottomRewind.center = CGPointMake(0, randomBottomObjectRewind);
     }
 }
-
-
-/* Original Code
- -(void)PlaceObjectsR {
- 
- RandomTopObjectPositionR = arc4random() %350;
- RandomTopObjectPositionR = RandomTopObjectPositionR - 228;
- 
- //Adjust for difficulty - 655 is hard. Increase to make it easier.
- 
- RandomBottomObjectPositionR = RandomTopObjectPositionR + 660;
- 
- ObjectTopR.center = CGPointMake(0, RandomTopObjectPositionR);
- ObjectBottomR.center = CGPointMake(0, RandomBottomObjectPositionR);
- }
- */
 
 -(void)birdyMovingRewind {
 
