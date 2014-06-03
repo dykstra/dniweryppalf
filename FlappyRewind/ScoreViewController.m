@@ -16,11 +16,11 @@
 
 - (void)viewDidLoad
 {
-    HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
-    HighScore.text = [NSString stringWithFormat:@" %li", (long)HighScoreNumber];
+    //HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    //HighScore.text = [NSString stringWithFormat:@" %li", (long)HighScoreNumber];
     
-    LowScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"LowScoreSaved"];
-    LowScore.text = [NSString stringWithFormat:@" %li", (long)LowScoreNumber];
+    //LowScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"LowScoreSaved"];
+    //LowScore.text = [NSString stringWithFormat:@" %li", (long)LowScoreNumber];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

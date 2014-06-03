@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-NSInteger HighScoreNumber;
-NSInteger LowScoreNumber;
+//NSInteger HighScoreNumber1;
+//NSInteger LowScoreNumber1;
 
 @interface ScoreViewController : UIViewController
 
 {
-    IBOutlet UILabel *HighScore;
-    IBOutlet UILabel *LowScore;
+  //  IBOutlet UILabel *HighScore1;
+  //  IBOutlet UILabel *LowScore1;
 }
 
 @end

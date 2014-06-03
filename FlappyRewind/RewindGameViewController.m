@@ -9,6 +9,7 @@
 #import "GameManager.h"
 #import "RewindSettingsViewController.h"
 #import "RewindGameViewController.h"
+#import "HighLowScoreViewController.h"
 
 @interface RewindGameViewController ()
 
@@ -29,17 +30,19 @@
     scoreLabelRewind.hidden = NO;
     settingsButon.hidden = YES;
     
+//Set bird animation. Lower the Interval to make birdy go up and down faster.
+    
     birdyMoveRewind = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(birdyMovingRewind) userInfo:nil repeats:YES];
     [self placeObjectsRewind];
     
-    //Sets movement speed of objects.
+//Sets movement speed of objects.
     
-    objectsMovementRewind = [NSTimer scheduledTimerWithTimeInterval:-0.01 target:self selector:@selector(objectMovingRewind) userInfo:nil repeats:YES];
+    objectsMovementRewind = [NSTimer scheduledTimerWithTimeInterval:-0.025 target:self selector:@selector(objectMovingRewind) userInfo:nil repeats:YES];
 }
 
 -(void)gameOverRewind {
     
-    if (scoreNumberRewind > lowScoreNumber) {
+    if (scoreNumberRewind < lowScoreNumber) {
         [[NSUserDefaults standardUserDefaults] setInteger:scoreNumberRewind forKey:@"LowScoreSaved"];
     }
     
@@ -57,36 +60,35 @@
     settingsButon.hidden = NO;
 }
 
-
--(IBAction)tryAgainRewindButton:(id)sender {
-    
-//Reloads the initial rewind game view after gameover. 
-    
-    RewindGameViewController *rewindGameViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RewindGameViewController"];
-    [self presentViewController:rewindGameViewController animated:YES completion:nil];
-    
-}
-
 -(void)scoreRewind {
     
     scoreNumberRewind = scoreNumberRewind - 1;
     scoreLabelRewind.text = [NSString stringWithFormat:@"%i", scoreNumberRewind];
 }
 
+-(IBAction)tryAgainRewindButton:(id)sender {
+    
+//Reloads the initial rewind game view after gameover.
+    
+    RewindGameViewController *rewindGameViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RewindGameViewController"];
+    [self presentViewController:rewindGameViewController animated:YES completion:nil];
+    
+}
+
 -(void)objectMovingRewind {
     
-    objectTopRewind.center = CGPointMake(objectTopRewind.center.x +0.1, objectTopRewind.center.y);
-    objectBottomRewind.center = CGPointMake(objectBottomRewind.center.x +0.1, objectBottomRewind.center.y);
+    objectTopRewind.center = CGPointMake(objectTopRewind.center.x +0.13, objectTopRewind.center.y);
+    objectBottomRewind.center = CGPointMake(objectBottomRewind.center.x +0.13, objectBottomRewind.center.y);
     
 //Once objects reach right of screen, resets the object images to start over on the left.
     
-    if (objectTopRewind.center.x > 320){
+    if (objectTopRewind.center.x > 335){
         [self placeObjectsRewind];
     }
     
-//Decrements the score by 1 as successfully flown through objects.
+//Decrements the score by 1 as successfully flown through objects. I have no idea why == 0 works, as .x of the topobject is 267.
     
-    if (objectTopRewind.center.x == 267){
+    if (objectTopRewind.center.x == 0){
         [self scoreRewind];
     }
     
@@ -113,7 +115,7 @@
 
 -(void)placeObjectsRewind {
     
-    randomTopObjectRewind = arc4random() %350;  //original 350
+    randomTopObjectRewind = arc4random() %330;  //original 350
     randomTopObjectRewind = randomTopObjectRewind - 228; //original 228
 
 //Get's _difficulty value from NSObject GameManager
@@ -130,7 +132,7 @@
     
     } else if ([GameManager getDifficulty] == 1) {
         
-    randomBottomObjectRewind = randomTopObjectRewind + 675;
+    randomBottomObjectRewind = randomTopObjectRewind + 670;
         objectTopRewind.center = CGPointMake(0, randomTopObjectRewind);
         objectBottomRewind.center = CGPointMake(0, randomBottomObjectRewind);
     
@@ -171,11 +173,13 @@
     if (birdyFlightRewind > 0) {
         birdyRewind.image = [UIImage imageNamed:@"flappyLgUp.png"];
         }
+    
     if (birdyFlightRewind < 0) {
         birdyRewind.image = [UIImage imageNamed:@"flappyLgDown.png"];
     }
 }
 
+//The jump height of the birdy wen tapped; higher the #, higher up the bird goes.
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     birdyFlightRewind = 30;

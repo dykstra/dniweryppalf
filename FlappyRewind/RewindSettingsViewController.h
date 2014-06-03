@@ -10,7 +10,6 @@
 
 @interface RewindSettingsViewController : UIViewController
 
-
 @property (nonatomic, strong) IBOutlet UISwitch *UISwitchInvertGravity;
 @property (nonatomic, strong) IBOutlet UIButton *easyModeButton;
 @property (nonatomic, strong) IBOutlet UIButton *mediumModeButton;

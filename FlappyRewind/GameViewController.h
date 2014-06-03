@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "GameSettingsViewController.h"
 
 int BirdyFlight;
 int RandomTopObjectPosition;

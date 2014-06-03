@@ -88,7 +88,6 @@
     if (CGRectIntersectsRect(Birdy.frame, BarBottom.frame)){
         [self GameOver];
     }
-    
 }
 
 //Randomly generates the objects in different positions; ensuring proper spacing from top, bottom and middle.
@@ -124,7 +123,6 @@
     if (BirdyFlight < 0) {
         Birdy.image = [UIImage imageNamed:@"flappyLgDown.png"];
     }
-    
 }
 
 //Speed of the Birdy.
