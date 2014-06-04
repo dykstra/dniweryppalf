@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 dougdykstra. All rights reserved.
 //
 
+#import "GameManager.h"
 #import "GameSettingsViewController.h"
 
 @interface GameSettingsViewController ()
@@ -23,9 +24,24 @@
     return self;
 }
 
+-(IBAction)switchFastForward {
+    
+    //UISwitch to fast forward birdy. Saves the selected setting which is retrieved in the Game VC.
+    
+    NSUserDefaults *fastForwardSwitchValue = [NSUserDefaults standardUserDefaults];
+    [fastForwardSwitchValue setBool:self.fastForwardBirdSwitch.on forKey:@"fastForwardSwitchOn"];
+    [fastForwardSwitchValue synchronize];
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+//Sets the default user selected fast forward selection on load.
+    
+    _fastForwardBirdSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"fastForwardSwitchOn"];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -33,6 +49,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//Easy(0), Medium(1), and Hard(2) buttons
+
+-(IBAction)easyButton {
+    [GameManager setDifficulty:0];
+}
+
+-(IBAction)mediumButton {
+    [GameManager setDifficulty:1];
+}
+
+-(IBAction)hardButton {
+    [GameManager setDifficulty:2];
 }
 
 /*

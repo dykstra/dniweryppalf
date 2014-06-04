@@ -14,10 +14,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 
 {
+//Defaults for invert gravity
     NSUserDefaults *GravitySwitchValue = [NSUserDefaults standardUserDefaults];
     if (![GravitySwitchValue objectForKey:@"SwitchOn"]) {
         [GravitySwitchValue setBool:YES forKey:@"SwitchOn"];
     }
+    
+//Defaults for fast farwarding bird
+        NSUserDefaults *fastForwardSwitchValue = [NSUserDefaults standardUserDefaults];
+        if (![fastForwardSwitchValue objectForKey:@"fastForwardSwitchOn"]) {
+            [fastForwardSwitchValue setBool:YES forKey:@"fastForwardSwitchOn"];
+        }
     // Override point for customization after application launch.
     return YES;
 }

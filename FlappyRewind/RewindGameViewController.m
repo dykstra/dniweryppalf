@@ -30,7 +30,7 @@
     scoreLabelRewind.hidden = NO;
     settingsButon.hidden = YES;
     
-//Set bird animation. Lower the Interval to make birdy go up and down faster.
+//Set bird animation. Lower the Interval to make birdy go up and down faster; 0.03 is good fast speed.
     
     birdyMoveRewind = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(birdyMovingRewind) userInfo:nil repeats:YES];
     [self placeObjectsRewind];
@@ -206,6 +206,21 @@
     
     scoreNumberRewind = 0;
     lowScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"LowScoreSaved"];
+    
+//Animation for top and bottom objects
+    objectBottomRewind.animationImages = [NSArray arrayWithObjects:
+                                    [UIImage imageNamed:@"objectbottom.png"],
+                                    [UIImage imageNamed:@"objectbottom-sm.png"], nil];
+    [objectBottomRewind setAnimationRepeatCount:0];
+    objectBottomRewind.animationDuration = 0.1;
+    [objectBottomRewind startAnimating];
+    
+    objectTopRewind.animationImages = [NSArray arrayWithObjects:
+                                 [UIImage imageNamed:@"objecttop.png"],
+                                 [UIImage imageNamed:@"objecttop-sm.png"], nil];
+    [objectTopRewind setAnimationRepeatCount:0];
+    objectTopRewind.animationDuration = 0.1;
+    [objectTopRewind startAnimating];
     
     [super viewDidLoad];
     

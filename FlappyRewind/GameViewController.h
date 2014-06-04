@@ -25,9 +25,10 @@ NSInteger HighScoreNumber;
     IBOutlet UIImageView *ObjectBottom;
     IBOutlet UIImageView *BarTop;
     IBOutlet UIImageView *BarBottom;
-    IBOutlet UIButton *TryAgain;
     IBOutlet UIButton *Back;
     IBOutlet UILabel *ScoreLabel;
+    IBOutlet UIButton *tryAgain;
+    IBOutlet UIButton *settingsButton;
     
     NSTimer *BirdyMove;
     NSTimer *ObjectsMovement;
@@ -35,6 +36,7 @@ NSInteger HighScoreNumber;
 }
 
 -(IBAction)StartGame:(id)sender;
+-(IBAction)tryAgainButton:(id)sender;
 -(void)BirdyMoving;
 -(void)ObjectsMoving;
 -(void)PlaceObjects;

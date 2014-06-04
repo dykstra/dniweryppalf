@@ -39,6 +39,8 @@
 		D96E69F9192C58CF001CFEBC /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F8192C58CF001CFEBC /* backbutton.png */; };
 		D96E69FC192D7519001CFEBC /* RewindGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69FB192D7519001CFEBC /* RewindGameViewController.m */; };
 		D96F418D193D6A310007C420 /* HighLowScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F418C193D6A310007C420 /* HighLowScoreViewController.m */; };
+		D96F4191193ED33E0007C420 /* objectbottom-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F4190193ED33E0007C420 /* objectbottom-sm.png */; };
+		D96F4193193ED4DC0007C420 /* objecttop-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F4192193ED4DC0007C420 /* objecttop-sm.png */; };
 		D9CAE9A2193234DF00FD3E78 /* RewindSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */; };
 		D9CAE9A51932352100FD3E78 /* GameSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CAE9A41932352100FD3E78 /* GameSettingsViewController.m */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		D96E69FB192D7519001CFEBC /* RewindGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewindGameViewController.m; sourceTree = "<group>"; };
 		D96F418B193D6A310007C420 /* HighLowScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighLowScoreViewController.h; sourceTree = "<group>"; };
 		D96F418C193D6A310007C420 /* HighLowScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighLowScoreViewController.m; sourceTree = "<group>"; };
+		D96F4190193ED33E0007C420 /* objectbottom-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "objectbottom-sm.png"; path = "../objectbottom-sm.png"; sourceTree = "<group>"; };
+		D96F4192193ED4DC0007C420 /* objecttop-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objecttop-sm.png"; sourceTree = "<group>"; };
 		D9CAE9A0193234DF00FD3E78 /* RewindSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewindSettingsViewController.h; sourceTree = "<group>"; };
 		D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewindSettingsViewController.m; sourceTree = "<group>"; };
 		D9CAE9A31932352100FD3E78 /* GameSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettingsViewController.h; sourceTree = "<group>"; };
@@ -194,7 +198,9 @@
 				D96E69E419299149001CFEBC /* gameback.png */,
 				D96E69E0192868B0001CFEBC /* barobjects.png */,
 				D96E69DC19286032001CFEBC /* objectbottom.png */,
+				D96F4190193ED33E0007C420 /* objectbottom-sm.png */,
 				D96E69DD19286032001CFEBC /* objecttop.png */,
+				D96F4192193ED4DC0007C420 /* objecttop-sm.png */,
 				D96E69D31927E2F9001CFEBC /* mainback.png */,
 				D96E69A01927DD98001CFEBC /* FlappyRewind-Info.plist */,
 				D96E69A11927DD98001CFEBC /* InfoPlist.strings */,
@@ -308,11 +314,13 @@
 				D96E69F6192C5626001CFEBC /* flappyLgDown.png in Resources */,
 				D96E69EA19299264001CFEBC /* normalbutton.png in Resources */,
 				D96E69EC19299264001CFEBC /* startbutton.png in Resources */,
+				D96F4193193ED4DC0007C420 /* objecttop-sm.png in Resources */,
 				D96E69E1192868B0001CFEBC /* barobjects.png in Resources */,
 				D96E69A31927DD98001CFEBC /* InfoPlist.strings in Resources */,
 				D96E69DE19286032001CFEBC /* objectbottom.png in Resources */,
 				D96E69ED19299264001CFEBC /* tryagainbutton.png in Resources */,
 				D96E69F3192C5537001CFEBC /* gameover.png in Resources */,
+				D96F4191193ED33E0007C420 /* objectbottom-sm.png in Resources */,
 				D96E69EF192993B5001CFEBC /* highscore.png in Resources */,
 				D96E69DF19286032001CFEBC /* objecttop.png in Resources */,
 				D96E69AC1927DD98001CFEBC /* Main.storyboard in Resources */,

@@ -7,12 +7,48 @@
 //
 
 #import "GameViewController.h"
+#import "GameManager.h"
+#import "GameSettingsViewController.h"
 
 @interface GameViewController ()
 
 @end
 
 @implementation GameViewController
+
+
+-(IBAction)StartGame:(id)sender {
+    
+//Set user's uiswitch fast forward selection from previous settings screen
+    
+    NSUserDefaults *fastForwardSwitchValue = [NSUserDefaults standardUserDefaults];
+    BOOL fastForwardSwitchOn = [fastForwardSwitchValue boolForKey:@"fastForwardSwitchOn"];
+    
+    ObjectTop.hidden = NO;
+    ObjectBottom.hidden = NO;
+    StartGame.hidden = YES;
+    Back.hidden = YES;
+    GameOver.hidden = YES;
+    settingsButton.hidden = YES;
+    
+//Set bird animation. Lower the Interval to make birdy go up and down faster; 0.03 is good fast speed.
+    
+    if (fastForwardSwitchOn) {
+        BirdyMove = [NSTimer scheduledTimerWithTimeInterval:0.03 target:self selector:@selector(BirdyMoving) userInfo:nil repeats:YES];
+    }
+    else {
+        BirdyMove = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(BirdyMoving) userInfo:nil repeats:YES];
+    }
+    
+//BirdyMove = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(BirdyMoving) userInfo:nil repeats:YES]; //original code
+    
+    [self PlaceObjects];
+    
+//Sets movement speed of objects.
+    
+    ObjectsMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObjectsMoving) userInfo:nil repeats:YES];
+    
+}
 
 -(void)GameOver {
     
@@ -24,7 +60,8 @@
     [BirdyMove invalidate];
     
     GameOver.hidden = NO;
-    TryAgain.hidden = NO;
+    tryAgain.hidden = NO;
+    settingsButton.hidden = NO;
     Back.hidden = NO;
     ObjectTop.hidden = YES;
     ObjectBottom.hidden = YES;
@@ -39,23 +76,15 @@
     
 }
 
--(IBAction)StartGame:(id)sender {
+-(IBAction)tryAgainButton:(id)sender {
     
-    ObjectTop.hidden = NO;
-    ObjectBottom.hidden = NO;
-    StartGame.hidden = YES;
-    Back.hidden = YES;
-    GameOver.hidden = YES;
+//Reloads the initial game view after gameover.
     
-    BirdyMove = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(BirdyMoving) userInfo:nil repeats:YES];
-    
-    [self PlaceObjects];
-    
-//Sets movement speed of objects.
-    
-    ObjectsMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObjectsMoving) userInfo:nil repeats:YES];
+    GameViewController *gameViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"GameViewController"];
+    [self presentViewController:gameViewController animated:YES completion:nil];
     
 }
+
 
 -(void)ObjectsMoving {
     
@@ -94,15 +123,30 @@
 
 -(void)PlaceObjects {
     
-    RandomTopObjectPosition = arc4random() %350;
-    RandomTopObjectPosition = RandomTopObjectPosition - 228;
+    RandomTopObjectPosition = arc4random() %350;  //original 350
+    RandomTopObjectPosition = RandomTopObjectPosition - 228; //orignal 228
     
+//Get's _difficulty value from NSObject GameManager
+    
+    [GameManager getDifficulty];
+    
+    if ([GameManager getDifficulty] == 0) {
+        
 //Adjust for difficulty - 655 is hard. Increase to make it easier.
-    RandomBottomObjectPosition = RandomTopObjectPosition + 660;
+        RandomBottomObjectPosition = RandomTopObjectPosition + 690;
+            ObjectTop.center = CGPointMake(340, RandomTopObjectPosition);
+            ObjectBottom.center = CGPointMake(340, RandomBottomObjectPosition);
+        
+    } else if ([GameManager getDifficulty] == 1) {
+        RandomBottomObjectPosition = RandomTopObjectPosition + 670;
+            ObjectTop.center = CGPointMake(340, RandomTopObjectPosition);
+            ObjectBottom.center = CGPointMake(340, RandomBottomObjectPosition);
     
-    ObjectTop.center = CGPointMake(340, RandomTopObjectPosition);
-    ObjectBottom.center = CGPointMake(340, RandomBottomObjectPosition);
-    
+    } else if ([GameManager getDifficulty] == 2) {
+        RandomBottomObjectPosition = RandomTopObjectPosition + 655;
+            ObjectTop.center = CGPointMake(340, RandomTopObjectPosition);
+            ObjectBottom.center = CGPointMake(340, RandomBottomObjectPosition);
+    }
 }
 
 //Sets the position and speed as birdy is tapped.
@@ -147,10 +191,26 @@
     ObjectTop.hidden = YES;
     ObjectBottom.hidden = YES;
     GameOver.hidden = YES;
-    TryAgain.hidden = YES;
+    tryAgain.hidden = YES;
     
     ScoreNumber = 0;
     HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    
+//Animation for top and bottom objects
+    ObjectBottom.animationImages = [NSArray arrayWithObjects:
+                                    [UIImage imageNamed:@"objectbottom.png"],
+                                    [UIImage imageNamed:@"objectbottom-sm.png"], nil];
+    [ObjectBottom setAnimationRepeatCount:0];
+    ObjectBottom.animationDuration = 0.1;
+    [ObjectBottom startAnimating];
+    
+    ObjectTop.animationImages = [NSArray arrayWithObjects:
+                                    [UIImage imageNamed:@"objecttop.png"],
+                                    [UIImage imageNamed:@"objecttop-sm.png"], nil];
+    [ObjectTop setAnimationRepeatCount:0];
+    ObjectTop.animationDuration = 0.1;
+    [ObjectTop startAnimating];
+    
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

@@ -10,4 +10,15 @@
 
 @interface GameSettingsViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UISwitch *fastForwardBirdSwitch;
+@property (nonatomic, strong) IBOutlet UIButton *easyGameButton;
+@property (nonatomic, strong) IBOutlet UIButton *mediumGameButton;
+@property (nonatomic, strong) IBOutlet UIButton *hardGameButton;
+
+-(IBAction)switchFastForward;
+-(IBAction)easyButton;
+-(IBAction)mediumButton;
+-(IBAction)hardButton;
+
+
 @end
