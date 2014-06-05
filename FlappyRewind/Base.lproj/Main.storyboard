@@ -203,7 +203,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Qe-ao-6qD">
-                                <rect key="frame" x="0.0" y="558" width="320" height="10"/>
+                                <rect key="frame" x="0.0" y="544" width="320" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-Af-QOc">
@@ -432,7 +432,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barobjects.png" translatesAutoresizingMaskIntoConstraints="NO" id="EIs-EE-7Xg">
-                                <rect key="frame" x="0.0" y="558" width="320" height="10"/>
+                                <rect key="frame" x="0.0" y="544" width="320" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n8-m2-OCD">
@@ -519,10 +519,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Uri-or-AY3"/>
-        <segue reference="bGp-gD-Ryl"/>
-        <segue reference="kg0-Oj-7hv"/>
-        <segue reference="nrl-TV-LlL"/>
+        <segue reference="2CN-BZ-zSD"/>
         <segue reference="JJt-AD-Pd2"/>
+        <segue reference="PSK-1L-ocE"/>
+        <segue reference="nrl-TV-LlL"/>
+        <segue reference="kg0-Oj-7hv"/>
     </inferredMetricsTieBreakers>
 </document>
