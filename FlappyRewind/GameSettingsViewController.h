@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface GameSettingsViewController : UIViewController
+@interface GameSettingsViewController : UIViewController <ADBannerViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UISwitch *fastForwardBirdSwitch;
+@property (nonatomic, strong) IBOutlet UISwitch *magneticFloorSwitch;
 @property (nonatomic, strong) IBOutlet UIButton *easyGameButton;
 @property (nonatomic, strong) IBOutlet UIButton *mediumGameButton;
 @property (nonatomic, strong) IBOutlet UIButton *hardGameButton;
 
 -(IBAction)switchFastForward;
+-(IBAction)switchMagneticFloor;
 -(IBAction)easyButton;
 -(IBAction)mediumButton;
 -(IBAction)hardButton;

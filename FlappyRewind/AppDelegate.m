@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <iAd/iAd.h>
+#import "GameSettingsViewController.h"
 #import "RewindSettingsViewController.h"
 
 @implementation AppDelegate
@@ -14,17 +16,33 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 
 {
-//Defaults for invert gravity
+//Defaults for invert gravity "Rewind Game"
     NSUserDefaults *GravitySwitchValue = [NSUserDefaults standardUserDefaults];
     if (![GravitySwitchValue objectForKey:@"SwitchOn"]) {
         [GravitySwitchValue setBool:YES forKey:@"SwitchOn"];
     }
     
-//Defaults for fast farwarding bird
+//Defaults for speeding up the objects "Rewind Game"
+    NSUserDefaults *speedUpObjectsSwitchValue = [NSUserDefaults standardUserDefaults];
+    if (![speedUpObjectsSwitchValue objectForKey:@"speedUpObjectsSwitchOn"]) {
+        [speedUpObjectsSwitchValue setBool:YES forKey:@"speedUpObjectsSwitchOn"];
+    }
+    
+//Defaults for fast farwarding bird "Forward Game"
         NSUserDefaults *fastForwardSwitchValue = [NSUserDefaults standardUserDefaults];
         if (![fastForwardSwitchValue objectForKey:@"fastForwardSwitchOn"]) {
             [fastForwardSwitchValue setBool:YES forKey:@"fastForwardSwitchOn"];
         }
+    
+//Defaults for magnetic floor "Forward Game"
+    NSUserDefaults *magneticFloorSwitchValue = [NSUserDefaults standardUserDefaults];
+    if (![magneticFloorSwitchValue objectForKey:@"magneticFloorSwitchOn"]) {
+        [magneticFloorSwitchValue setBool:YES forKey:@"magneticFloorSwitchOn"];
+    }
+    
+
+    [UIViewController prepareInterstitialAds];
+    
     // Override point for customization after application launch.
     return YES;
 }

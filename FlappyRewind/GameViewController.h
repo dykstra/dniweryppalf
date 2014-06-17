@@ -7,40 +7,48 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #include "GameSettingsViewController.h"
 
-int BirdyFlight;
-int RandomTopObjectPosition;
-int RandomBottomObjectPosition;
-int ScoreNumber;
-NSInteger HighScoreNumber;
+int birdyFlight;
+int randomTopObjectPosition;
+int randomBottomObjectPosition;
+int scoreEasy;
+int scoreMedium;
+int scoreHard;
+float objectSpeed;
 
-@interface GameViewController : UIViewController
-{
+@interface GameViewController : UIViewController <AVAudioPlayerDelegate>
+{    
+    AVAudioPlayer *technoJam;
     
-    IBOutlet UIImageView *Birdy;
+    IBOutlet UIImageView *birdy;
     IBOutlet UIImageView *GameOver;
-    IBOutlet UIButton *StartGame;
-    IBOutlet UIImageView *ObjectTop;
-    IBOutlet UIImageView *ObjectBottom;
-    IBOutlet UIImageView *BarTop;
-    IBOutlet UIImageView *BarBottom;
-    IBOutlet UIButton *Back;
-    IBOutlet UILabel *ScoreLabel;
+    IBOutlet UIButton *startGame;
+    IBOutlet UIImageView *objectTop;
+    IBOutlet UIImageView *backWhiteObjectTop;
+    IBOutlet UIImageView *objectBottom;
+    IBOutlet UIImageView *backWhiteObjectBottom;
+    IBOutlet UIImageView *barTop;
+    IBOutlet UIImageView *barBottom;
+    IBOutlet UIButton *home;
+    IBOutlet UILabel *scoreLabel;
     IBOutlet UIButton *tryAgain;
     IBOutlet UIButton *settingsButton;
     
-    NSTimer *BirdyMove;
-    NSTimer *ObjectsMovement;
+    NSTimer *birdyMove;
+    NSTimer *objectsMovement;
     
 }
 
--(IBAction)StartGame:(id)sender;
+-(IBAction)startGame:(id)sender;
 -(IBAction)tryAgainButton:(id)sender;
--(void)BirdyMoving;
--(void)ObjectsMoving;
--(void)PlaceObjects;
--(void)Score;
--(void)GameOver;
+-(void)birdyMoving;
+-(void)objectsMoving;
+-(void)placeObjects;
+-(void)scoreEasy;
+-(void)scoreMedium;
+-(void)scoreHard;
+-(void)gameOver;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "GameManager.h"
+#import "HomeViewController.h"
 #import "GameSettingsViewController.h"
 
 @interface GameSettingsViewController ()
@@ -24,6 +25,7 @@
     return self;
 }
 
+//Fast Forward switch method
 -(IBAction)switchFastForward {
     
     //UISwitch to fast forward birdy. Saves the selected setting which is retrieved in the Game VC.
@@ -34,15 +36,25 @@
     
 }
 
+//Magnetic floor switch method
+-(IBAction)switchMagneticFloor {
+    
+    //UISwitch to turn on magnetic floor.
+    
+    NSUserDefaults *magneticFloorSwitchValue = [NSUserDefaults standardUserDefaults];
+    [magneticFloorSwitchValue setBool:self.magneticFloorSwitch.on forKey:@"magneticFloorSwitchOn"];
+    [magneticFloorSwitchValue synchronize];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-//Sets the default user selected fast forward selection on load.
+//Sets the default user selected fast forward / magnetic floor selection on load.
     
     _fastForwardBirdSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"fastForwardSwitchOn"];
-    
-    // Do any additional setup after loading the view.
+    _magneticFloorSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"magneticFloorSwitchOn"];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,14 +67,39 @@
 
 -(IBAction)easyButton {
     [GameManager setDifficulty:0];
+    //highScoreEasy = [[NSUserDefaults standardUserDefaults] integerForKey:@"highScoreEasySaved"];
 }
 
 -(IBAction)mediumButton {
     [GameManager setDifficulty:1];
+    //highScoreMedium = [[NSUserDefaults standardUserDefaults] integerForKey:@"highScoreMediumSaved"];
 }
 
 -(IBAction)hardButton {
     [GameManager setDifficulty:2];
+    //highScoreHard = [[NSUserDefaults standardUserDefaults] integerForKey:@"highScoreHardSaved"];
+}
+
+//iAd
+
+#pragma mark iAd Delegate Methods
+
+-(void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:1];
+    [UIView commitAnimations];
+    
+}
+
+-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:0];
+    [UIView commitAnimations];
+    
 }
 
 /*

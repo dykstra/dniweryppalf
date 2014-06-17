@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface RewindSettingsViewController : UIViewController
+@interface RewindSettingsViewController : UIViewController <ADBannerViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UISwitch *UISwitchInvertGravity;
+@property (nonatomic, strong) IBOutlet UISwitch *UISwitchSpeedUpObjects;
 @property (nonatomic, strong) IBOutlet UIButton *easyModeButton;
 @property (nonatomic, strong) IBOutlet UIButton *mediumModeButton;
 @property (nonatomic, strong) IBOutlet UIButton *hardModeButton;
 
 -(IBAction)SwitchGravity;
+-(IBAction)SpeedUpObjects;
 -(IBAction)easyMode;
 -(IBAction)mediumMode;
 -(IBAction)hardMode;

@@ -7,6 +7,8 @@
 //
 
 #import "GameManager.h"
+#import "HomeViewController.h"
+#import "RewindGameViewController.h"
 #import "RewindSettingsViewController.h"
 
 @interface RewindSettingsViewController ()
@@ -34,6 +36,16 @@
     
 }
 
+-(IBAction)SpeedUpObjects {
+    
+//UISwitch to invert gravity. Saves the selected setting which is retrieved in the Rewind Game VC.
+    
+    NSUserDefaults *speedUpObjectsValue = [NSUserDefaults standardUserDefaults];
+    [speedUpObjectsValue setBool:self.UISwitchSpeedUpObjects.on forKey:@"speedUpObjectsSwitchOn"];
+    [speedUpObjectsValue synchronize];
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,7 +54,7 @@
     
     _UISwitchInvertGravity.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"SwitchOn"];
     
-    // Do any additional setup after loading the view.
+    _UISwitchSpeedUpObjects.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"speedUpObjectsSwitchOn"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,14 +67,39 @@
 
 -(IBAction)easyMode {
     [GameManager setDifficulty:0];
+    //lowScoreEasy = [[NSUserDefaults standardUserDefaults] integerForKey:@"lowScoreEasySaved"];
 }
 
 -(IBAction)mediumMode {
     [GameManager setDifficulty:1];
+    //lowScoreMedium = [[NSUserDefaults standardUserDefaults] integerForKey:@"lowScoreMediumSaved"];
 }
 
 -(IBAction)hardMode {
     [GameManager setDifficulty:2];
+    //lowScoreHard = [[NSUserDefaults standardUserDefaults] integerForKey:@"lowScoreHardSaved"];
+}
+
+//iAd
+
+#pragma mark iAd Delegate Methods
+
+-(void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:1];
+    [UIView commitAnimations];
+    
+}
+
+-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:0];
+    [UIView commitAnimations];
+    
 }
 
 /*

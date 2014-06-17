@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D92AB9BA194FC06A008513F7 /* launchscreen640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = D92AB9B9194FC06A008513F7 /* launchscreen640x1136.png */; };
+		D92AB9BC194FC0A2008513F7 /* rewindscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D92AB9BB194FC0A2008513F7 /* rewindscore.png */; };
 		D94B78191938022900029423 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B78181938022900029423 /* GameManager.m */; };
 		D96E69991927DD98001CFEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E69981927DD98001CFEBC /* Foundation.framework */; };
 		D96E699B1927DD98001CFEBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E699A1927DD98001CFEBC /* CoreGraphics.framework */; };
@@ -23,26 +25,57 @@
 		D96E69C41927DD98001CFEBC /* FlappyRewindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69C31927DD98001CFEBC /* FlappyRewindTests.m */; };
 		D96E69CF1927DE03001CFEBC /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69CE1927DE03001CFEBC /* GameViewController.m */; };
 		D96E69D81927E2F9001CFEBC /* mainback.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69D31927E2F9001CFEBC /* mainback.png */; };
-		D96E69DE19286032001CFEBC /* objectbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69DC19286032001CFEBC /* objectbottom.png */; };
-		D96E69DF19286032001CFEBC /* objecttop.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69DD19286032001CFEBC /* objecttop.png */; };
 		D96E69E1192868B0001CFEBC /* barobjects.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E0192868B0001CFEBC /* barobjects.png */; };
-		D96E69EA19299264001CFEBC /* normalbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E619299264001CFEBC /* normalbutton.png */; };
-		D96E69EB19299264001CFEBC /* rewindbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E719299264001CFEBC /* rewindbutton.png */; };
-		D96E69EC19299264001CFEBC /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E819299264001CFEBC /* startbutton.png */; };
-		D96E69ED19299264001CFEBC /* tryagainbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69E919299264001CFEBC /* tryagainbutton.png */; };
 		D96E69EF192993B5001CFEBC /* highscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69EE192993B5001CFEBC /* highscore.png */; };
-		D96E69F2192C5537001CFEBC /* forwardbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F0192C5537001CFEBC /* forwardbutton.png */; };
 		D96E69F3192C5537001CFEBC /* gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F1192C5537001CFEBC /* gameover.png */; };
-		D96E69F6192C5626001CFEBC /* flappyLgDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F4192C5626001CFEBC /* flappyLgDown.png */; };
-		D96E69F7192C5626001CFEBC /* flappyLgUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F5192C5626001CFEBC /* flappyLgUp.png */; };
-		D96E69F9192C58CF001CFEBC /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96E69F8192C58CF001CFEBC /* backbutton.png */; };
 		D96E69FC192D7519001CFEBC /* RewindGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96E69FB192D7519001CFEBC /* RewindGameViewController.m */; };
-		D96F418D193D6A310007C420 /* HighLowScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F418C193D6A310007C420 /* HighLowScoreViewController.m */; };
-		D96F4191193ED33E0007C420 /* objectbottom-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F4190193ED33E0007C420 /* objectbottom-sm.png */; };
-		D96F4193193ED4DC0007C420 /* objecttop-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F4192193ED4DC0007C420 /* objecttop-sm.png */; };
+		D96F418D193D6A310007C420 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F418C193D6A310007C420 /* HomeViewController.m */; };
 		D96F4195194020C60007C420 /* gameback.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F4194194020C60007C420 /* gameback.png */; };
+		D96F41971941729C0007C420 /* lowscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41961941729C0007C420 /* lowscore.png */; };
+		D96F41A1194173D80007C420 /* difficulty.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F4198194173D80007C420 /* difficulty.png */; };
+		D96F41A6194173D80007C420 /* invertgravitylabel.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F419D194173D80007C420 /* invertgravitylabel.png */; };
+		D96F41A8194173D80007C420 /* settingsback.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F419F194173D80007C420 /* settingsback.png */; };
+		D96F41A9194173D80007C420 /* settingsbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41A0194173D80007C420 /* settingsbutton.png */; };
+		D96F41B01942A5550007C420 /* easy-greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41AA1942A5550007C420 /* easy-greenbutton.png */; };
+		D96F41B11942A5550007C420 /* easy-yellowbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41AB1942A5550007C420 /* easy-yellowbutton.png */; };
+		D96F41B21942A5550007C420 /* hard-greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41AC1942A5550007C420 /* hard-greenbutton.png */; };
+		D96F41B31942A5550007C420 /* hard-yellowbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41AD1942A5550007C420 /* hard-yellowbutton.png */; };
+		D96F41B41942A5550007C420 /* medium-greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41AE1942A5550007C420 /* medium-greenbutton.png */; };
+		D96F41B51942A5550007C420 /* medium-yellowbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41AF1942A5550007C420 /* medium-yellowbutton.png */; };
+		D96F41B71942A6A30007C420 /* homebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41B61942A6A30007C420 /* homebutton.png */; };
+		D96F41BA1942A8850007C420 /* forwardbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41B81942A8850007C420 /* forwardbutton.png */; };
+		D96F41BB1942A8850007C420 /* rewindbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41B91942A8850007C420 /* rewindbutton.png */; };
+		D96F41BD1942A8F20007C420 /* retrybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41BC1942A8F20007C420 /* retrybutton.png */; };
+		D96F41BF1942A9CA0007C420 /* startbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41BE1942A9CA0007C420 /* startbutton.png */; };
+		D96F41C11942AEA10007C420 /* homebutton1.png in Resources */ = {isa = PBXBuildFile; fileRef = D96F41C01942AEA10007C420 /* homebutton1.png */; };
 		D9CAE9A2193234DF00FD3E78 /* RewindSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */; };
 		D9CAE9A51932352100FD3E78 /* GameSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CAE9A41932352100FD3E78 /* GameSettingsViewController.m */; };
+		D9FBF3B51942CDE900B36CCB /* objectgreenbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3AD1942CDE900B36CCB /* objectgreenbottom.png */; };
+		D9FBF3B61942CDE900B36CCB /* objectgreenbottom1.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3AE1942CDE900B36CCB /* objectgreenbottom1.png */; };
+		D9FBF3B71942CDE900B36CCB /* objectgreentop.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3AF1942CDE900B36CCB /* objectgreentop.png */; };
+		D9FBF3B81942CDE900B36CCB /* objectgreentop1.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3B01942CDE900B36CCB /* objectgreentop1.png */; };
+		D9FBF3B91942CDE900B36CCB /* objectyellowbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3B11942CDE900B36CCB /* objectyellowbottom.png */; };
+		D9FBF3BA1942CDE900B36CCB /* objectyellowbottom1.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3B21942CDE900B36CCB /* objectyellowbottom1.png */; };
+		D9FBF3BB1942CDE900B36CCB /* objectyellowtop.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3B31942CDE900B36CCB /* objectyellowtop.png */; };
+		D9FBF3BC1942CDE900B36CCB /* objectyellowtop1.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3B41942CDE900B36CCB /* objectyellowtop1.png */; };
+		D9FBF3C31943EB9D00B36CCB /* easy-greenscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3BD1943EB9D00B36CCB /* easy-greenscore.png */; };
+		D9FBF3C41943EB9D00B36CCB /* easy-yellowscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3BE1943EB9D00B36CCB /* easy-yellowscore.png */; };
+		D9FBF3C51943EB9D00B36CCB /* hard-greenscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3BF1943EB9D00B36CCB /* hard-greenscore.png */; };
+		D9FBF3C61943EB9D00B36CCB /* hard-yellowscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3C01943EB9D00B36CCB /* hard-yellowscore.png */; };
+		D9FBF3C71943EB9D00B36CCB /* medium-greenscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3C11943EB9D00B36CCB /* medium-greenscore.png */; };
+		D9FBF3C81943EB9D00B36CCB /* medium-yellowscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3C21943EB9D00B36CCB /* medium-yellowscore.png */; };
+		D9FBF3CB1944089E00B36CCB /* flappyLargeDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3C91944089E00B36CCB /* flappyLargeDown.png */; };
+		D9FBF3CC1944089E00B36CCB /* flappyLargeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3CA1944089E00B36CCB /* flappyLargeUp.png */; };
+		D9FBF3CF1945368500B36CCB /* flappyLargeLeftDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3CD1945368500B36CCB /* flappyLargeLeftDown.png */; };
+		D9FBF3D01945368500B36CCB /* flappyLargeLeftUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3CE1945368500B36CCB /* flappyLargeLeftUp.png */; };
+		D9FBF3D21945521400B36CCB /* magneticfloorlabel.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3D11945521400B36CCB /* magneticfloorlabel.png */; };
+		D9FBF3D419455C3B00B36CCB /* scoreborder.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3D319455C3B00B36CCB /* scoreborder.png */; };
+		D9FBF3D61946923000B36CCB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FBF3D51946923000B36CCB /* iAd.framework */; };
+		D9FBF3E61949645900B36CCB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FBF3E51949645900B36CCB /* AVFoundation.framework */; };
+		D9FBF3E81949658E00B36CCB /* flappyRewind.wav in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3E71949658E00B36CCB /* flappyRewind.wav */; };
+		D9FBF3F3194D211600B36CCB /* increasespeedlabel.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3F2194D211600B36CCB /* increasespeedlabel.png */; };
+		D9FBF3F5194D213100B36CCB /* fastbirdylabel.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3F4194D213100B36CCB /* fastbirdylabel.png */; };
+		D9FBF3F7194D214500B36CCB /* forwardscore.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FBF3F6194D214500B36CCB /* forwardscore.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D92AB9B9194FC06A008513F7 /* launchscreen640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen640x1136.png; sourceTree = "<group>"; };
+		D92AB9BB194FC0A2008513F7 /* rewindscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewindscore.png; sourceTree = "<group>"; };
 		D94B78171938022900029423 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameManager.h; path = ../GameManager.h; sourceTree = "<group>"; };
 		D94B78181938022900029423 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameManager.m; path = ../GameManager.m; sourceTree = "<group>"; };
 		D96E69951927DD98001CFEBC /* FlappyRewind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyRewind.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,30 +113,61 @@
 		D96E69CD1927DE03001CFEBC /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		D96E69CE1927DE03001CFEBC /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		D96E69D31927E2F9001CFEBC /* mainback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainback.png; sourceTree = "<group>"; };
-		D96E69DC19286032001CFEBC /* objectbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectbottom.png; sourceTree = "<group>"; };
-		D96E69DD19286032001CFEBC /* objecttop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objecttop.png; sourceTree = "<group>"; };
 		D96E69E0192868B0001CFEBC /* barobjects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barobjects.png; sourceTree = "<group>"; };
-		D96E69E619299264001CFEBC /* normalbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normalbutton.png; sourceTree = "<group>"; };
-		D96E69E719299264001CFEBC /* rewindbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewindbutton.png; sourceTree = "<group>"; };
-		D96E69E819299264001CFEBC /* startbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startbutton.png; sourceTree = "<group>"; };
-		D96E69E919299264001CFEBC /* tryagainbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tryagainbutton.png; sourceTree = "<group>"; };
 		D96E69EE192993B5001CFEBC /* highscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highscore.png; sourceTree = "<group>"; };
-		D96E69F0192C5537001CFEBC /* forwardbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardbutton.png; sourceTree = "<group>"; };
 		D96E69F1192C5537001CFEBC /* gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameover.png; sourceTree = "<group>"; };
-		D96E69F4192C5626001CFEBC /* flappyLgDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLgDown.png; sourceTree = "<group>"; };
-		D96E69F5192C5626001CFEBC /* flappyLgUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLgUp.png; sourceTree = "<group>"; };
-		D96E69F8192C58CF001CFEBC /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 		D96E69FA192D7519001CFEBC /* RewindGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewindGameViewController.h; sourceTree = "<group>"; };
 		D96E69FB192D7519001CFEBC /* RewindGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewindGameViewController.m; sourceTree = "<group>"; };
-		D96F418B193D6A310007C420 /* HighLowScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighLowScoreViewController.h; sourceTree = "<group>"; };
-		D96F418C193D6A310007C420 /* HighLowScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighLowScoreViewController.m; sourceTree = "<group>"; };
-		D96F4190193ED33E0007C420 /* objectbottom-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "objectbottom-sm.png"; path = "../objectbottom-sm.png"; sourceTree = "<group>"; };
-		D96F4192193ED4DC0007C420 /* objecttop-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objecttop-sm.png"; sourceTree = "<group>"; };
+		D96F418B193D6A310007C420 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D96F418C193D6A310007C420 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D96F4194194020C60007C420 /* gameback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameback.png; sourceTree = "<group>"; };
+		D96F41961941729C0007C420 /* lowscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowscore.png; sourceTree = "<group>"; };
+		D96F4198194173D80007C420 /* difficulty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = difficulty.png; path = ../difficulty.png; sourceTree = "<group>"; };
+		D96F419D194173D80007C420 /* invertgravitylabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = invertgravitylabel.png; path = ../invertgravitylabel.png; sourceTree = "<group>"; };
+		D96F419F194173D80007C420 /* settingsback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsback.png; path = ../settingsback.png; sourceTree = "<group>"; };
+		D96F41A0194173D80007C420 /* settingsbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsbutton.png; path = ../settingsbutton.png; sourceTree = "<group>"; };
+		D96F41AA1942A5550007C420 /* easy-greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "easy-greenbutton.png"; path = "../easy-greenbutton.png"; sourceTree = "<group>"; };
+		D96F41AB1942A5550007C420 /* easy-yellowbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "easy-yellowbutton.png"; path = "../easy-yellowbutton.png"; sourceTree = "<group>"; };
+		D96F41AC1942A5550007C420 /* hard-greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hard-greenbutton.png"; path = "../hard-greenbutton.png"; sourceTree = "<group>"; };
+		D96F41AD1942A5550007C420 /* hard-yellowbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hard-yellowbutton.png"; path = "../hard-yellowbutton.png"; sourceTree = "<group>"; };
+		D96F41AE1942A5550007C420 /* medium-greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "medium-greenbutton.png"; path = "../medium-greenbutton.png"; sourceTree = "<group>"; };
+		D96F41AF1942A5550007C420 /* medium-yellowbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "medium-yellowbutton.png"; path = "../medium-yellowbutton.png"; sourceTree = "<group>"; };
+		D96F41B61942A6A30007C420 /* homebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homebutton.png; path = ../homebutton.png; sourceTree = "<group>"; };
+		D96F41B81942A8850007C420 /* forwardbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forwardbutton.png; path = ../forwardbutton.png; sourceTree = "<group>"; };
+		D96F41B91942A8850007C420 /* rewindbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rewindbutton.png; path = ../rewindbutton.png; sourceTree = "<group>"; };
+		D96F41BC1942A8F20007C420 /* retrybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retrybutton.png; sourceTree = "<group>"; };
+		D96F41BE1942A9CA0007C420 /* startbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = startbutton.png; path = ../startbutton.png; sourceTree = "<group>"; };
+		D96F41C01942AEA10007C420 /* homebutton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homebutton1.png; sourceTree = "<group>"; };
 		D9CAE9A0193234DF00FD3E78 /* RewindSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewindSettingsViewController.h; sourceTree = "<group>"; };
 		D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewindSettingsViewController.m; sourceTree = "<group>"; };
 		D9CAE9A31932352100FD3E78 /* GameSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSettingsViewController.h; sourceTree = "<group>"; };
 		D9CAE9A41932352100FD3E78 /* GameSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSettingsViewController.m; sourceTree = "<group>"; };
+		D9FBF3AD1942CDE900B36CCB /* objectgreenbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectgreenbottom.png; sourceTree = "<group>"; };
+		D9FBF3AE1942CDE900B36CCB /* objectgreenbottom1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectgreenbottom1.png; sourceTree = "<group>"; };
+		D9FBF3AF1942CDE900B36CCB /* objectgreentop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectgreentop.png; sourceTree = "<group>"; };
+		D9FBF3B01942CDE900B36CCB /* objectgreentop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectgreentop1.png; sourceTree = "<group>"; };
+		D9FBF3B11942CDE900B36CCB /* objectyellowbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectyellowbottom.png; sourceTree = "<group>"; };
+		D9FBF3B21942CDE900B36CCB /* objectyellowbottom1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectyellowbottom1.png; sourceTree = "<group>"; };
+		D9FBF3B31942CDE900B36CCB /* objectyellowtop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectyellowtop.png; sourceTree = "<group>"; };
+		D9FBF3B41942CDE900B36CCB /* objectyellowtop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectyellowtop1.png; sourceTree = "<group>"; };
+		D9FBF3BD1943EB9D00B36CCB /* easy-greenscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "easy-greenscore.png"; sourceTree = "<group>"; };
+		D9FBF3BE1943EB9D00B36CCB /* easy-yellowscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "easy-yellowscore.png"; sourceTree = "<group>"; };
+		D9FBF3BF1943EB9D00B36CCB /* hard-greenscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hard-greenscore.png"; sourceTree = "<group>"; };
+		D9FBF3C01943EB9D00B36CCB /* hard-yellowscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hard-yellowscore.png"; sourceTree = "<group>"; };
+		D9FBF3C11943EB9D00B36CCB /* medium-greenscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medium-greenscore.png"; sourceTree = "<group>"; };
+		D9FBF3C21943EB9D00B36CCB /* medium-yellowscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medium-yellowscore.png"; sourceTree = "<group>"; };
+		D9FBF3C91944089E00B36CCB /* flappyLargeDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLargeDown.png; sourceTree = "<group>"; };
+		D9FBF3CA1944089E00B36CCB /* flappyLargeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLargeUp.png; sourceTree = "<group>"; };
+		D9FBF3CD1945368500B36CCB /* flappyLargeLeftDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLargeLeftDown.png; sourceTree = "<group>"; };
+		D9FBF3CE1945368500B36CCB /* flappyLargeLeftUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyLargeLeftUp.png; sourceTree = "<group>"; };
+		D9FBF3D11945521400B36CCB /* magneticfloorlabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magneticfloorlabel.png; sourceTree = "<group>"; };
+		D9FBF3D319455C3B00B36CCB /* scoreborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreborder.png; sourceTree = "<group>"; };
+		D9FBF3D51946923000B36CCB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D9FBF3E51949645900B36CCB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9FBF3E71949658E00B36CCB /* flappyRewind.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = flappyRewind.wav; path = ../../../Downloads/flappyRewind.wav; sourceTree = "<group>"; };
+		D9FBF3F2194D211600B36CCB /* increasespeedlabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = increasespeedlabel.png; sourceTree = "<group>"; };
+		D9FBF3F4194D213100B36CCB /* fastbirdylabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fastbirdylabel.png; sourceTree = "<group>"; };
+		D9FBF3F6194D214500B36CCB /* forwardscore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardscore.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +175,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FBF3E61949645900B36CCB /* AVFoundation.framework in Frameworks */,
+				D9FBF3D61946923000B36CCB /* iAd.framework in Frameworks */,
 				D96E699B1927DD98001CFEBC /* CoreGraphics.framework in Frameworks */,
 				D96E699D1927DD98001CFEBC /* UIKit.framework in Frameworks */,
 				D96E69991927DD98001CFEBC /* Foundation.framework in Frameworks */,
@@ -150,6 +218,8 @@
 		D96E69971927DD98001CFEBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9FBF3E51949645900B36CCB /* AVFoundation.framework */,
+				D9FBF3D51946923000B36CCB /* iAd.framework */,
 				D96E69981927DD98001CFEBC /* Foundation.framework */,
 				D96E699A1927DD98001CFEBC /* CoreGraphics.framework */,
 				D96E699C1927DD98001CFEBC /* UIKit.framework */,
@@ -164,14 +234,14 @@
 				D96E69A71927DD98001CFEBC /* AppDelegate.h */,
 				D96E69A81927DD98001CFEBC /* AppDelegate.m */,
 				D96E69AA1927DD98001CFEBC /* Main.storyboard */,
-				D96F418B193D6A310007C420 /* HighLowScoreViewController.h */,
-				D96F418C193D6A310007C420 /* HighLowScoreViewController.m */,
 				D96E69FA192D7519001CFEBC /* RewindGameViewController.h */,
 				D96E69FB192D7519001CFEBC /* RewindGameViewController.m */,
 				D9CAE9A0193234DF00FD3E78 /* RewindSettingsViewController.h */,
 				D9CAE9A1193234DF00FD3E78 /* RewindSettingsViewController.m */,
 				D94B78171938022900029423 /* GameManager.h */,
 				D94B78181938022900029423 /* GameManager.m */,
+				D96F418B193D6A310007C420 /* HomeViewController.h */,
+				D96F418C193D6A310007C420 /* HomeViewController.m */,
 				D96E69CD1927DE03001CFEBC /* GameViewController.h */,
 				D96E69CE1927DE03001CFEBC /* GameViewController.m */,
 				D9CAE9A31932352100FD3E78 /* GameSettingsViewController.h */,
@@ -185,22 +255,53 @@
 		D96E699F1927DD98001CFEBC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9FBF3E71949658E00B36CCB /* flappyRewind.wav */,
+				D9FBF3F6194D214500B36CCB /* forwardscore.png */,
+				D9FBF3F4194D213100B36CCB /* fastbirdylabel.png */,
+				D9FBF3F2194D211600B36CCB /* increasespeedlabel.png */,
+				D92AB9BB194FC0A2008513F7 /* rewindscore.png */,
+				D92AB9B9194FC06A008513F7 /* launchscreen640x1136.png */,
+				D9FBF3D319455C3B00B36CCB /* scoreborder.png */,
+				D9FBF3C91944089E00B36CCB /* flappyLargeDown.png */,
+				D9FBF3CA1944089E00B36CCB /* flappyLargeUp.png */,
+				D9FBF3CD1945368500B36CCB /* flappyLargeLeftDown.png */,
+				D9FBF3CE1945368500B36CCB /* flappyLargeLeftUp.png */,
+				D9FBF3BD1943EB9D00B36CCB /* easy-greenscore.png */,
+				D9FBF3BE1943EB9D00B36CCB /* easy-yellowscore.png */,
+				D9FBF3BF1943EB9D00B36CCB /* hard-greenscore.png */,
+				D9FBF3C01943EB9D00B36CCB /* hard-yellowscore.png */,
+				D9FBF3C11943EB9D00B36CCB /* medium-greenscore.png */,
+				D9FBF3C21943EB9D00B36CCB /* medium-yellowscore.png */,
+				D96F41B61942A6A30007C420 /* homebutton.png */,
+				D96F41C01942AEA10007C420 /* homebutton1.png */,
+				D96F41BE1942A9CA0007C420 /* startbutton.png */,
+				D96F41BC1942A8F20007C420 /* retrybutton.png */,
+				D96F4198194173D80007C420 /* difficulty.png */,
+				D9FBF3D11945521400B36CCB /* magneticfloorlabel.png */,
+				D96F41B81942A8850007C420 /* forwardbutton.png */,
+				D96F41B91942A8850007C420 /* rewindbutton.png */,
+				D96F41AA1942A5550007C420 /* easy-greenbutton.png */,
+				D96F41AB1942A5550007C420 /* easy-yellowbutton.png */,
+				D96F41AC1942A5550007C420 /* hard-greenbutton.png */,
+				D96F41AD1942A5550007C420 /* hard-yellowbutton.png */,
+				D96F41AE1942A5550007C420 /* medium-greenbutton.png */,
+				D96F41AF1942A5550007C420 /* medium-yellowbutton.png */,
+				D96F419D194173D80007C420 /* invertgravitylabel.png */,
+				D96F419F194173D80007C420 /* settingsback.png */,
+				D96F41A0194173D80007C420 /* settingsbutton.png */,
 				D96F4194194020C60007C420 /* gameback.png */,
-				D96E69F8192C58CF001CFEBC /* backbutton.png */,
-				D96E69F5192C5626001CFEBC /* flappyLgUp.png */,
-				D96E69F4192C5626001CFEBC /* flappyLgDown.png */,
 				D96E69F1192C5537001CFEBC /* gameover.png */,
-				D96E69F0192C5537001CFEBC /* forwardbutton.png */,
 				D96E69EE192993B5001CFEBC /* highscore.png */,
-				D96E69E619299264001CFEBC /* normalbutton.png */,
-				D96E69E719299264001CFEBC /* rewindbutton.png */,
-				D96E69E819299264001CFEBC /* startbutton.png */,
-				D96E69E919299264001CFEBC /* tryagainbutton.png */,
+				D96F41961941729C0007C420 /* lowscore.png */,
+				D9FBF3AD1942CDE900B36CCB /* objectgreenbottom.png */,
+				D9FBF3AE1942CDE900B36CCB /* objectgreenbottom1.png */,
+				D9FBF3AF1942CDE900B36CCB /* objectgreentop.png */,
+				D9FBF3B01942CDE900B36CCB /* objectgreentop1.png */,
+				D9FBF3B11942CDE900B36CCB /* objectyellowbottom.png */,
+				D9FBF3B21942CDE900B36CCB /* objectyellowbottom1.png */,
+				D9FBF3B31942CDE900B36CCB /* objectyellowtop.png */,
+				D9FBF3B41942CDE900B36CCB /* objectyellowtop1.png */,
 				D96E69E0192868B0001CFEBC /* barobjects.png */,
-				D96E69DC19286032001CFEBC /* objectbottom.png */,
-				D96F4190193ED33E0007C420 /* objectbottom-sm.png */,
-				D96E69DD19286032001CFEBC /* objecttop.png */,
-				D96F4192193ED4DC0007C420 /* objecttop-sm.png */,
 				D96E69D31927E2F9001CFEBC /* mainback.png */,
 				D96E69A01927DD98001CFEBC /* FlappyRewind-Info.plist */,
 				D96E69A11927DD98001CFEBC /* InfoPlist.strings */,
@@ -275,6 +376,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dougdykstra;
 				TargetAttributes = {
+					D96E69941927DD98001CFEBC = {
+						DevelopmentTeam = 4M6J96V38K;
+					};
 					D96E69B51927DD98001CFEBC = {
 						TestTargetID = D96E69941927DD98001CFEBC;
 					};
@@ -304,26 +408,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96E69EB19299264001CFEBC /* rewindbutton.png in Resources */,
+				D96F41B11942A5550007C420 /* easy-yellowbutton.png in Resources */,
+				D96F41BA1942A8850007C420 /* forwardbutton.png in Resources */,
 				D96E69D81927E2F9001CFEBC /* mainback.png in Resources */,
-				D96E69F7192C5626001CFEBC /* flappyLgUp.png in Resources */,
+				D9FBF3D01945368500B36CCB /* flappyLargeLeftUp.png in Resources */,
+				D9FBF3C61943EB9D00B36CCB /* hard-yellowscore.png in Resources */,
+				D9FBF3D21945521400B36CCB /* magneticfloorlabel.png in Resources */,
+				D9FBF3C31943EB9D00B36CCB /* easy-greenscore.png in Resources */,
 				D96E69B11927DD98001CFEBC /* Images.xcassets in Resources */,
-				D96E69F2192C5537001CFEBC /* forwardbutton.png in Resources */,
-				D96E69F9192C58CF001CFEBC /* backbutton.png in Resources */,
-				D96E69F6192C5626001CFEBC /* flappyLgDown.png in Resources */,
-				D96E69EA19299264001CFEBC /* normalbutton.png in Resources */,
-				D96E69EC19299264001CFEBC /* startbutton.png in Resources */,
-				D96F4193193ED4DC0007C420 /* objecttop-sm.png in Resources */,
+				D96F41BB1942A8850007C420 /* rewindbutton.png in Resources */,
+				D9FBF3BC1942CDE900B36CCB /* objectyellowtop1.png in Resources */,
+				D96F41B31942A5550007C420 /* hard-yellowbutton.png in Resources */,
+				D96F41A1194173D80007C420 /* difficulty.png in Resources */,
+				D9FBF3BB1942CDE900B36CCB /* objectyellowtop.png in Resources */,
+				D96F41B41942A5550007C420 /* medium-greenbutton.png in Resources */,
+				D9FBF3CB1944089E00B36CCB /* flappyLargeDown.png in Resources */,
+				D96F41BF1942A9CA0007C420 /* startbutton.png in Resources */,
 				D96F4195194020C60007C420 /* gameback.png in Resources */,
 				D96E69E1192868B0001CFEBC /* barobjects.png in Resources */,
+				D9FBF3F7194D214500B36CCB /* forwardscore.png in Resources */,
+				D92AB9BC194FC0A2008513F7 /* rewindscore.png in Resources */,
 				D96E69A31927DD98001CFEBC /* InfoPlist.strings in Resources */,
-				D96E69DE19286032001CFEBC /* objectbottom.png in Resources */,
-				D96E69ED19299264001CFEBC /* tryagainbutton.png in Resources */,
+				D9FBF3B51942CDE900B36CCB /* objectgreenbottom.png in Resources */,
+				D96F41B51942A5550007C420 /* medium-yellowbutton.png in Resources */,
+				D96F41A8194173D80007C420 /* settingsback.png in Resources */,
+				D9FBF3E81949658E00B36CCB /* flappyRewind.wav in Resources */,
+				D9FBF3D419455C3B00B36CCB /* scoreborder.png in Resources */,
+				D96F41A9194173D80007C420 /* settingsbutton.png in Resources */,
+				D9FBF3B81942CDE900B36CCB /* objectgreentop1.png in Resources */,
+				D96F41BD1942A8F20007C420 /* retrybutton.png in Resources */,
+				D9FBF3CF1945368500B36CCB /* flappyLargeLeftDown.png in Resources */,
 				D96E69F3192C5537001CFEBC /* gameover.png in Resources */,
-				D96F4191193ED33E0007C420 /* objectbottom-sm.png in Resources */,
+				D92AB9BA194FC06A008513F7 /* launchscreen640x1136.png in Resources */,
+				D96F41B21942A5550007C420 /* hard-greenbutton.png in Resources */,
 				D96E69EF192993B5001CFEBC /* highscore.png in Resources */,
-				D96E69DF19286032001CFEBC /* objecttop.png in Resources */,
+				D9FBF3CC1944089E00B36CCB /* flappyLargeUp.png in Resources */,
+				D9FBF3BA1942CDE900B36CCB /* objectyellowbottom1.png in Resources */,
+				D96F41971941729C0007C420 /* lowscore.png in Resources */,
+				D9FBF3B71942CDE900B36CCB /* objectgreentop.png in Resources */,
+				D9FBF3C81943EB9D00B36CCB /* medium-yellowscore.png in Resources */,
+				D96F41B01942A5550007C420 /* easy-greenbutton.png in Resources */,
+				D9FBF3B61942CDE900B36CCB /* objectgreenbottom1.png in Resources */,
+				D96F41B71942A6A30007C420 /* homebutton.png in Resources */,
+				D9FBF3C71943EB9D00B36CCB /* medium-greenscore.png in Resources */,
+				D96F41C11942AEA10007C420 /* homebutton1.png in Resources */,
 				D96E69AC1927DD98001CFEBC /* Main.storyboard in Resources */,
+				D9FBF3C51943EB9D00B36CCB /* hard-greenscore.png in Resources */,
+				D96F41A6194173D80007C420 /* invertgravitylabel.png in Resources */,
+				D9FBF3C41943EB9D00B36CCB /* easy-yellowscore.png in Resources */,
+				D9FBF3F5194D213100B36CCB /* fastbirdylabel.png in Resources */,
+				D9FBF3F3194D211600B36CCB /* increasespeedlabel.png in Resources */,
+				D9FBF3B91942CDE900B36CCB /* objectyellowbottom.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96E69CF1927DE03001CFEBC /* GameViewController.m in Sources */,
-				D96F418D193D6A310007C420 /* HighLowScoreViewController.m in Sources */,
+				D96F418D193D6A310007C420 /* HomeViewController.m in Sources */,
 				D9CAE9A51932352100FD3E78 /* GameSettingsViewController.m in Sources */,
 				D9CAE9A2193234DF00FD3E78 /* RewindSettingsViewController.m in Sources */,
 				D96E69A91927DD98001CFEBC /* AppDelegate.m in Sources */,
@@ -415,7 +550,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -433,6 +569,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "7F8991F8-0F1A-4401-B1A2-7BF1FAB9007D";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -453,7 +590,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -464,6 +602,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "7F8991F8-0F1A-4401-B1A2-7BF1FAB9007D";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -474,10 +613,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlappyRewind/FlappyRewind-Prefix.pch";
 				INFOPLIST_FILE = "FlappyRewind/FlappyRewind-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7F8991F8-0F1A-4401-B1A2-7BF1FAB9007D";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -487,10 +631,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Douglas DYKSTRA (4M6J96V38K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlappyRewind/FlappyRewind-Prefix.pch";
 				INFOPLIST_FILE = "FlappyRewind/FlappyRewind-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7F8991F8-0F1A-4401-B1A2-7BF1FAB9007D";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
